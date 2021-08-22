@@ -1,0 +1,45 @@
+.video_card {
+    width: 100%;
+    cursor: pointer;
+
+    &__image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #1890ff;
+
+        svg {
+            width: 100%;
+
+            &:last-child {
+                position: absolute;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+}
+
+.line_card {
+    display: flex;
+    grid-template-columns: 20% calc(85% - 20px);
+    grid-gap: 20px;
+
+    .video_card__image {
+        width: 200px;
+    }
+}

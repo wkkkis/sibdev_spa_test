@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "user_login": "admin1",
+      "user_password": "admin1",
+      "id": 1
+    }
+  ],
+  "requests": [
+    {
+      "request": "вулкан",
+      "title": "Вулкан",
+      "video_number": 12,
+      "sort_variant": "date",
+      "user_id": "1",
+      "id": 1
+    },
+    {
+      "request": "перец",
+      "title": "Перец",
+      "video_number": 12,
+      "sort_variant": "date",
+      "user_id": "1",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+.request {
+    font-size: 16px;
+    position: relative;
+    padding: 13px 20px;
+    background: white;
+    border-bottom: 1px solid #F1F1F1;
+    cursor: pointer;
+
+    &__button {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        height: 100%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    &:hover {
+
+        .request__button {
+            opacity: 1;
+        }
+    }
+}

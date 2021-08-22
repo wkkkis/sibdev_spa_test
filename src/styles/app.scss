@@ -1,0 +1,63 @@
+@import "pages/all_pages";
+@import "components/all_components";
+@import "vars";
+
+.app {
+  width: 100%;
+  font-family: $main-font;
+  width: 100%;
+  height: 100vh;
+  background-color: #FAFAFA;
+
+  &__content {
+    padding-top: 64px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+  }
+}
+
+.without_padding {
+  padding: 0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+.gray_color {
+  color: rgb(170, 170, 170);
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
+.text-36 {
+  font-size: 36px;
+}
+
+.mb_40 {
+  margin-bottom: 40px;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
+}

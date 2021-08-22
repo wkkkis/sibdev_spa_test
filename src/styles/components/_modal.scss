@@ -1,0 +1,72 @@
+.ant-modal-content {
+    border-radius: 10px;
+    font-family: sans-serif;
+
+    .ant-modal-close {
+        display: none;
+    }
+
+    .ant-modal-header {
+        border-radius: 10px 10px 0 0;
+        border-bottom: 0;
+    
+        .ant-modal-title {
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    .ant-modal-body {
+        padding: 20px 40px ;
+
+        .ant-form-item-control-input-content {
+            display: flex;
+
+            .ant-slider {
+                width: 90%;
+            }
+        }
+
+        .form-footer {
+            width: 100%;
+            
+            .ant-form-item-control-input-content {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                button {
+                    width: 100%;
+                    border-radius: 5px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .ant-modal-footer {
+        display: none;
+    }
+
+    .ant-row {
+        display: grid;
+
+        .ant-form-item-label {
+            display: flex;
+            justify-content: flex-start;
+
+            label {
+
+                &::before {
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+.ant-modal {
+    width: 510px;
+}

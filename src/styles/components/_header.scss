@@ -1,0 +1,80 @@
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    
+    .ant-layout {
+        background: white;
+        box-shadow: 0 -2px 5px rgb(206, 206, 206);
+    }
+
+    &__wrap {
+        background: transparent;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        &__logo_with_link {
+            display: flex;
+
+            .header_navlinks {
+                display: flex;
+                height: 100%;
+        
+                &__link {
+                    height: 100%;
+                    margin-right: 40px;
+                    
+                    a {
+                        color: black;
+                    }
+                    
+                    .active_link {
+                        padding-top: 18px;
+                        padding-bottom: 22px;
+                        border-bottom: 2px solid #1890ff;
+                        color: #1890ff;
+                    }
+                }
+            }
+
+            .header_logo {
+                float: left;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-right: 40px;
+            }
+        }
+
+        &__logout-btn {
+            float: right;
+            height: 100%;
+            font-size: 18px;
+            cursor: pointer;
+
+            span {
+                color: #1890ff;
+                transition: color 0.5s ease;
+            }
+        }
+    }
+
+    .ant-layout-header {
+        padding: 0;
+
+        .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+            background: transparent;
+            width: 100%;
+        }
+
+        .ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a, .ant-menu-dark .ant-menu-item > span > a {
+            color: rgb(170, 170, 170);
+            font-size: 18px;
+        }
+    }
+}
+
