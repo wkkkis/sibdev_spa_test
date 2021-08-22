@@ -30,7 +30,7 @@ export const requestInfoAThunk = () => async dispatch => {
     setTimeout(() => {
         dispatch(set_notification_info(false))
         debugger
-    }, 5000)
+    }, 3000)
 }
 
 export const getFavoritesThunk = (id) => async dispatch => {
@@ -53,7 +53,6 @@ export const editFavoriteThunk = (object) => async dispatch => {
     let response = await requestApi.editFavorite(id, request, user_id, videos_number, sort_variant, title)
     if(response.status === 200) {
         dispatch(getFavoritesThunk(user_id))
-        dispatch(requestInfoAThunk())
     }
 }
 
@@ -61,7 +60,6 @@ export const removeFavoriteThunk = (id, userId) => async dispatch => {
     let response = await requestApi.removeFavorite(id)
     if(response.status === 200) {
         dispatch(getFavoritesThunk(userId))
-        dispatch(requestInfoAThunk())
     }
 }
 
